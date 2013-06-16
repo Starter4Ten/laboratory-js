@@ -10,7 +10,7 @@ As well s the client framework, a server end point is required to log events. Th
 
 Some basic algorithms for splitting the the user based in to groups will be provided or you can write a custom function to do this for you. Another way is to request which group a user is in from your server by supplying a URL that will respond to a GET request supplying the user's group id. 
 
-Analysising the data
+Analysing the data
 --------------------
 
 From the event data recorded it is possible to query for the which group logged an event the most. The event that is specified as measuredBy for the experiment should indicate a success for the experiment. So if your user based is evenly and randomly split in to groups, the group with the highest number of success events over time should be the winner.
