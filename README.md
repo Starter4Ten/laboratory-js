@@ -6,7 +6,9 @@ Split testing javascript framework for experimenting on your users.
 Server End Points
 -----------------
 
-As well s the client framework, a server end point is required to log events. This end ppint should except a POST request and should record the information supplied in the JSON body of the request. This which will include the eventName, user's group id, date and time.
+As well s the client framework, a server end point is required to log events. This end ppint should accept a POST request and should record the information supplied in the JSON body of the request. This which will include the eventName, user's group id, date and time. Server end point is not included as part of the API.
+
+Some basic algorithms for splitting the the user based in to groups will be provided or you can write a custom function to do this for you. Another way is to request which group a user is in from your server by supplying a URL that will respond to a GET request supplying the user's group id. 
 
 Analysising the data
 --------------------
