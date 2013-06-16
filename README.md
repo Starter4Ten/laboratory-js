@@ -1,7 +1,7 @@
 laboratory-js
 ===============
 
-Split testing javascript framework for running experimenting on your users.
+Split testing javascript framework for experimenting on your users.
 
 Server End Points
 -----------------
