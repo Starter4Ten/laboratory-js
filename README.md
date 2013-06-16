@@ -18,18 +18,18 @@ Defining an experiment
 
 Create a js file in the following format:
 
-experiment('An experiment to show that our new feature results in more of this happening', function () {
+    experiment('An experiment to show that our new feature results in more of this happening', function () {
     
-    group('A', function () {
-        feature('new_feature').turnOn();
+        group('A', function () {
+            feature('new_feature').turnOn();
+        });
+    
+        group('B', function () {
+            feature('new_feature').turnOff();
+        });
+    
+        measuredBy('successLogEvent');
+    
     });
-    
-    group('B', function () {
-        feature('new_feature').turnOff();
-    });
-    
-    measuredBy('successLogEvent');
-    
-});
 
 
